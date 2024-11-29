@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+    <head>
+        <title>Sayad Pervez</title>
+        <meta charset="utf-8">
+        <meta name="description" property="og:description" content="Sayad Pervez - Portfolio">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <meta name="theme-color" content="#00BFA5">
+        <link rel="icon" type="image/svg+xml" href="/assets/icons/zteal45.svg">
+        <meta name="generator" content="Astro v2.0.15">
+        <meta property="og:site_name" content="Sayad Pervez">
+        <meta property="og:title" content="Sayad Pervez">
+        <meta name="author" content="Sayad Pervez">
+        <meta property="og:type" content="website">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            :root {
+                --primary-color: #00BFA5;
+                --surface-alpha: #17191C;
+            }
+
+            html,body{
+                margin:0;padding:0;
+                color-scheme: dark;
+                background-color: var(--surface-alpha);
+            }
+
+            button:focus{
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+            @font-face {
+                font-family: 'b5';
+                src: url('/assets/fonts/bootstrap-icons.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .bsicons {
+                font-family: 'b5';
+                font-size: 16px;
+                font-style: normal;
+            }
+
+            #root_center{
+                height: max-content;
+                max-width: 768px !important;
+                padding: 0;
+            }
+
+            #root_center *{
+                max-width: 100% !important;
+            }
+
+            #empty{
+                width: 100%;
+                background: transparent;
+            }
+
+            #hero_section{
+                position: relative;
+            }
+
+            #profile_pic{
+                border-radius: 100%;
+                width: 125px;
+                height: 125px;
+                border:4px solid white;
+                position: absolute;
+                left: 6%;
+                bottom: 0px;
+            }
+
+            #social_media_buttons_container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 12px;
+                padding-right: 6%;
+            }
+
+            #social_media_buttons button{
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+            }
+
+            #github_button{
+                color: white;
+                padding: 0;
+            }
+            
+            #github_button i{
+                font-size: 28px;
+            }
+
+            #github_button:hover{
+                color: var(--primary-color);
+            }
+
+            .bg_hover_primary{
+                background-color: transparent;
+                color: var(--primary-color);
+                border: 1px solid var(--primary-color);
+            }
+
+            .bg_primary{
+                background-color: var(--primary-color);
+            }
+
+            .bg_hover_primary:hover{
+                background-color: var(--primary-color);
+                color: white;
+            }
+
+            .pill{
+                border-radius: 10000000px;
+            }
+
+            .hide_on_large_screen{
+                display: block;
+            }
+
+            @media screen and (max-width: 768px) {
+                .hide_on_large_screen {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root_center" class="container-md">
+            <div style="height:48px;" class="empty hide_on_large_screen"></div>
+            <div id="hero_section">
+                <img id="sippin_coffee" src="/assets/images/sippin_coffee.jpg" />
+                <img id="profile_pic" src="/assets/images/avatar.jpg" />
+                <div id="social_media_buttons_container">
+                    <div id="social_media_buttons" class="d-flex">
+                        <button id="github_button" class="btn me-3"><i class="bsicons">&#xF3ED;</i></button>
+                        <button class="btn bg_primary text-white pill">LinkedIn <i class="bsicons ms-1">&#xF472;</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
