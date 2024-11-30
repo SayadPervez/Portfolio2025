@@ -174,6 +174,11 @@
                 margin-bottom: 16px;
             }
 
+            .article_detailed_description
+            {
+                display: none;
+            }
+
             .article strong{
                 font-weight: 500;
             }
@@ -190,6 +195,16 @@
             .article > .article_description{
                 font-size: 14px;
                 margin:12px 8px;
+                text-indent: 4ch;
+            }
+
+            .article > .article_description a{
+                color: rgba(0, 0, 255, 0.849);
+                cursor: pointer;
+            }
+
+            .article > .article_description a:hover{
+                color: blue;
             }
 
             .article > .article_nav{
@@ -364,14 +379,18 @@
                                         <strong>Sayad Pervez</strong>
                                         <span class="badge rounded-pill">&#x1F43A; Lone Wolf</span>
                                     </div>
-                                    <span class="article_timestamp">July 2024</span>
+                                    <span class="article_timestamp">June 2024</span>
                                 </div>
                             </div>
                             <div class="article_description">
-                                <p>Just because my recent posts have been about recruitment doesn't mean I've stepped away from coding. In fact, it's quite the opposite - I've been busy showcasing why being a jack-of-all-trades in tech is severely underrated.</p>
-                                <p>Context of the Screenshot attached (Had to censor some keywords for confidentiality) : I recently completed a full-fledged app solo in 6 months, including a crucial import feature. A feature which took an entire team elsewhere a month to implement. From backend to frontend, with some nginx wizardry thrown in, I can handle it all.</p>
-                                <p>This isn't about comparing teams or timelines. It's about versatility. In today's tech landscape, the ability to navigate multiple domains isn't just useful - it's essential. While specialists definitely have their place, there's immense value in developers who can adapt, pivot, and deliver across the stack.</p>
-                                <p>So yes, I can spot talent and lead recruitment drives. But at my core, I'm a full-stack developer who thrives on challenges across the development spectrum. Need someone who can architect a solution end-to-end and then build it? That's where I shine.</p>
+                                <p>
+                                    Just because my recent posts have been about recruitment doesn't mean I've stepped away from coding. In fact, it's quite the opposite - I've been busy showcasing why being a jack-of-all-trades in tech is severely underrated.<br>
+                                    &emsp;&emsp;Context of the Screenshot attached <a onclick="expandDescription($(this).parent())">...(Click to read more)</a>
+                                </p>
+                                <p class="article_detailed_description">Just because my recent posts have been about recruitment doesn't mean I've stepped away from coding. In fact, it's quite the opposite - I've been busy showcasing why being a jack-of-all-trades in tech is severely underrated.<br>
+                                    &emsp;&emsp;Context of the Screenshot attached (Had to censor some keywords for confidentiality) : I recently completed a full-fledged app solo in 6 months, including a crucial import feature. A feature which took an entire team elsewhere a month to implement. From backend to frontend, with some nginx wizardry thrown in, I can handle it all.<br>
+                                    &emsp;&emsp;This isn't about comparing teams or timelines. It's about versatility. In today's tech landscape, the ability to navigate multiple domains isn't just useful - it's essential. While specialists definitely have their place, there's immense value in developers who can adapt, pivot, and deliver across the stack.<br>
+                                    &emsp;&emsp;So yes, I can spot talent and lead recruitment drives. But at my core, I'm a full-stack developer who thrives on challenges across the development spectrum. Need someone who can architect a solution end-to-end and then build it? That's where I shine.</p>
                             </div>
                             <div class="article_carousel">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -405,5 +424,14 @@
 
             </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script>
+            function expandDescription(self)
+            {
+                self.css("display","none");
+                self.next().css("display","block");
+            }
+        </script>
     </body>
 </html>
