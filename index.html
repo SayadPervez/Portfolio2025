@@ -216,6 +216,11 @@
                 display: inline;
             }
 
+            .article .carousel-item img{
+                max-height: 600px;
+                border-radius: 4px;
+            }
+
             .article:hover{
                 background: var(--bg-grey);
             }
@@ -310,7 +315,7 @@
                             <p class="mt-3 text-center">Most of what I do here is confidential &#x1F92B;.<br>But here is what I can say,<br class="hide_on_large_screen"> I'm really good at whatever I do &#x1F609;.</p>
                         </div>
                         
-                        <div class="article" style="width:100%;height:400px;">
+                        <div class="article">
                             <div class="article_nav">
                                 <img src="/assets/images/avatar.jpg" />
                                 <div class="article_meta_container">
@@ -325,7 +330,28 @@
                                 <p>Wrapped up an amazing 4-day team trip with 20+ people! Got the tech crew out of the office and into nature for some much-needed downtime.</p>
                             </div>
                             <div class="article_carousel">
-
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/career/TeamTrip0.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/career/TeamTrip1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
