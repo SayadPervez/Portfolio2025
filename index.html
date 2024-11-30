@@ -198,7 +198,7 @@
                 text-indent: 4ch;
             }
 
-            .article > .article_description.no_indent{
+            .no_indent{
                 text-indent: 0;
             }
 
@@ -267,6 +267,11 @@
                 display: none;
             }
 
+            .flex_on_large_screen{
+                display: flex;
+                justify-content: space-between;
+            }
+
             @media screen and (max-width: 768px) {
                 *{
                     font-size: 14px;
@@ -278,6 +283,10 @@
 
                 .hide_on_small_screen{
                     display: none;
+                }
+
+                .flex_on_large_screen{
+                    display: block;
                 }
             }
         </style>
@@ -597,6 +606,52 @@
                             <div class="article_description">
                                 <p>Completed my undergrad with flying colors, a great job in hand and an amazing C.G.P.A of <strong>9.20</strong><br>
                                 Developed an Acoustic Positioning Protocol that detects the angle of sound as my final year project. Patent pending ... &#x1F44D;</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/education/zoomout2.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F939; The peak of my college life</span>
+                                    </div>
+                                    <span class="article_timestamp">2022</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Was elected the President of Designers Consortium, REC. Club President, intern, projects, college and exams. Embracing chaos and a lifestyle choice. &#x1F635;</p>
+                                <div class="no_indent flex_on_large_screen">
+                                    <div>
+                                        <strong>Events Conducted &#x1F3C6;</strong>
+                                        <ul>
+                                            <li>&#x1F50C; PCB Workshop</li>
+                                            <li>&#x1F4DA; Product Research & Analysis Competition</li>
+                                            <li>&#x1F9EA; Design & Project Expo</li>
+                                            <li>&#x1F4A1; Idea Presentations</li>
+                                        </ul>
+                                    </div>
+    
+                                    <div>
+                                        <strong>More..</strong>
+                                        <ul>
+                                            <li>&#x1F537; Developed Shape Placement Optimization algorithm for CNC Machining</li>
+                                            <li>&#x1F579; Developed PCM Simulation for IITM-PALS-VLABS</li>
+                                            <li>&#x1F466; Joined Zoho as Project Trainee</li>
+                                            <li>&#x1F476; Selected as Student Intern</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="article_carousel">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
