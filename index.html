@@ -134,6 +134,23 @@
                 background-color: var(--primary-color);
             }
 
+            .nav-tabs{
+                border:0 !important;
+            }
+
+            .nav-link{
+                color: var(--grey) !important;
+                border: 0 !important;
+            }
+
+            .nav-link.active{
+                font-weight: 600;
+                background: transparent !important;
+                color: var(--primary-color) !important;
+                border: 0 !important;
+                border-bottom: 2px solid var(--primary-color) !important;
+            }
+
             .bg_hover_primary:hover{
                 background-color: var(--primary-color);
                 color: white;
@@ -212,7 +229,7 @@
                 </ul>
 
                 <!-- Tab content -->
-                <div class="tab-content mt-4" id="myTabContent">
+                <div class="tab-content mt-4 mx-2">
                     <div class="tab-pane fade show active" id="career" role="tabpanel" aria-labelledby="career-tab">
                         <h4>Career</h4>
                         <p>This is the content for the Home tab.</p>
