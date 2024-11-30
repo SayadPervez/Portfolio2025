@@ -121,12 +121,12 @@
                 color: var(--grey);
             }
 
-            #zoho_header .badge{
+            #zoho_header .badge,#ug_header .badge{
                 font-size: 14px;
                 font-weight: 500;
             }
 
-            #zoho_logo{
+            #zoho_logo,#rec_logo{
                 height:132px;
                 opacity: 0.8;
             }
@@ -329,7 +329,7 @@
 
                 <!-- Tab content -->
                 <div class="tab-content mt-4 mx-2">
-                    <div class="tab-pane fade show active" id="career" role="tabpanel" aria-labelledby="career-tab">
+                    <div class="tab-pane fade" id="career" role="tabpanel" aria-labelledby="career-tab">
                         <div id="zoho_header" class="d-flex align-items-center justify-content-between">
                             <h4 class="mt-2">Zoho</h4>
                             <span class="badge rounded-pill bg_primary py-2 px-3">June 2022 - Present</span>
@@ -569,9 +569,36 @@
                         <div class="empty"></div>
                         
                     </div>
-                    <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
-                        <h4>Education</h4>
-                        <p>This is the content for the Profile tab.</p>
+                    <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
+
+                        <div id="ug_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Under Graduate</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">June 2019 - Apr 2023</span>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center justify-content-center my-4">
+                            <img id="rec_logo" src="/assets/images/education/rec.png" />
+                            <h4 class="mt-3">Bachelor of Engineering</h4>
+                            <h6>Electronics & Communication Engineering</h6>
+                            <p class="mt-2 text-center">College: Where self learning became the most valuable lesson &#x1F609;.</p>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F393; The end of my academic adventure ?</span>
+                                    </div>
+                                    <span class="article_timestamp">Apr 2023</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Completed my undergrad with flying colors, a great job in hand and an amazing C.G.P.A of <strong>9.20</strong><br>
+                                Developed an Acoustic Positioning Protocol that detects the angle of sound as my final year project. Patent Pending ... &#x1F44D;</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
                         <h4>Projects</h4>
