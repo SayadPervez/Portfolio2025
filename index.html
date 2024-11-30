@@ -19,12 +19,14 @@
             :root {
                 --primary-color: #00BFA5;
                 --surface-alpha: #17191C;
+                --grey: #868e96;
             }
 
             html,body{
                 margin:0;padding:0;
                 color-scheme: dark;
                 background-color: var(--surface-alpha);
+                color: white;
             }
 
             button:focus{
@@ -102,6 +104,26 @@
                 color: var(--primary-color);
             }
 
+            #meta_container_grid{
+                display: grid;
+                grid-template-columns: 6% 88% 6%;
+            }
+
+            #meta_grid p{
+                opacity: 75%;
+                font-size: 12px;
+            }
+
+            #more_meta div{
+                display: flex;
+                align-items: center;
+                color: var(--grey);
+            }
+
+            .text-primary{
+                color: var(--primary-color) !important;
+            }
+
             .bg_hover_primary{
                 background-color: transparent;
                 color: var(--primary-color);
@@ -121,12 +143,24 @@
                 border-radius: 10000000px;
             }
 
-            .hide_on_large_screen{
+            .hide_on_small_screen{
                 display: block;
             }
 
+            .hide_on_large_screen{
+                display: none;
+            }
+
             @media screen and (max-width: 768px) {
+                *{
+                    font-size: 14px;
+                }
+
                 .hide_on_large_screen {
+                    display: block;
+                }
+
+                .hide_on_small_screen{
                     display: none;
                 }
             }
@@ -134,7 +168,7 @@
     </head>
     <body>
         <div id="root_center" class="container-md">
-            <div style="height:48px;" class="empty hide_on_large_screen"></div>
+            <div style="height:48px;" class="empty hide_on_small_screen"></div>
             <div id="hero_section">
                 <img id="sippin_coffee" src="/assets/images/sippin_coffee.jpg" />
                 <img id="profile_pic" src="/assets/images/avatar.jpg" />
@@ -144,6 +178,21 @@
                         <button class="btn bg_primary text-white pill">LinkedIn <i class="bsicons ms-1">&#xF472;</i></button>
                     </div>
                 </div>
+            </div>
+            <div id="meta_container_grid">
+                <div class="empty"></div>
+                <div id="meta_grid" class="mt-1">
+                    <h1>Sayad Pervez</h1>
+                    <p class="text-primary mb-1">Driven to make meaningful contributions to science and progress</p>
+                    <span>Full Stack Developer by Profession,<br class="hide_on_large_screen">Electronics and Communication Engineer by Academics</span>
+                    <div id="more_meta" class="mt-2">
+                        <div>
+                            <i class="bsicons me-2">&#xF1CB;</i>
+                            <span>Causally Looking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty"></div>
             </div>
         </div>
     </body>
