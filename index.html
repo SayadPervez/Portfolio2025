@@ -181,12 +181,24 @@
                 background-color: #495057 !important;
             }
 
+            .article .article_timestamp{
+                font-size: 12px;
+                color: var(--grey);
+            }
+
             .article > .article_nav{
                 display: flex;
                 align-items: center;
             }
 
-            .article > .article_nav > .article_meta{
+            .article > .article_nav > .article_meta_container{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .article > .article_nav > .article_meta_container > .article_meta{
                 margin-left: 10px;
                 display: flex;
                 flex-direction: column;
@@ -296,11 +308,13 @@
                         <div class="article" style="width:100%;height:400px;">
                             <div class="article_nav">
                                 <img src="/assets/images/avatar.jpg" />
-                                <div class="article_meta">
-                                    <strong>Sayad Pervez</strong>
-                                    <span class="badge rounded-pill">&#x1F3DE; Live a Little</span>
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F3DE; Live a Little</span>
+                                    </div>
+                                    <span class="article_timestamp">Nov 12th, 2024</span>
                                 </div>
-                                
                             </div>
                         </div>
 
