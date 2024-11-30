@@ -20,6 +20,7 @@
                 --primary-color: #00BFA5;
                 --surface-alpha: #17191C;
                 --grey: #868e96;
+                --bg-grey: #212529;
             }
 
             html,body{
@@ -166,8 +167,50 @@
                 color: white;
             }
 
+            .article{
+                background: transparent;
+                border-radius: 8px;
+                padding: 16px;
+            }
+
+            .article strong{
+                font-weight: 500;
+            }
+
+            .article .badge{
+                background-color: #495057 !important;
+            }
+
+            .article > .article_nav{
+                display: flex;
+                align-items: center;
+            }
+
+            .article > .article_nav > .article_meta{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .article > .article_nav > img{
+                width: 40px;
+                height: 40px;
+                border-radius: 99999px;
+                display: inline;
+            }
+
+            .article:hover{
+                background: var(--bg-grey);
+            }
+
             .pill{
                 border-radius: 10000000px;
+            }
+
+            .empty{
+                height:24px;
+                width: 100%;
+                background: transparent;
             }
 
             .hide_on_small_screen{
@@ -247,9 +290,23 @@
                         </div>
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <img id="zoho_logo" src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zohologodarkbg.svg" />
-                            <p class="mt-3 text-center">Most of what I do here is confidential.<br class="hide_on_large_screen"> But here is what I can say.</p>
+                            <p class="mt-3 text-center">Most of what I do here is confidential &#x1F92B;.<br>But here is what I can say,<br class="hide_on_large_screen"> I'm really good at whatever I do &#x1F609;.</p>
                         </div>
                         
+                        <div class="article" style="width:100%;height:400px;">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta">
+                                    <strong>Sayad Pervez</strong>
+                                    <span class="badge rounded-pill">&#x1F3DE; Live a Little</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
                         
                     </div>
                     <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
