@@ -131,6 +131,12 @@
                 opacity: 0.8;
             }
 
+            #tabs_div{
+                position: sticky;
+                top: 0;
+                background-color: var(--surface-alpha);
+            }
+
             .text-primary{
                 color: var(--primary-color) !important;
             }
@@ -165,16 +171,18 @@
 
             .nav-tabs{
                 border:0 !important;
+                z-index: 10000;
             }
 
             .nav-link{
                 color: var(--grey) !important;
                 border: 0 !important;
+                background-color: var(--surface-alpha) !important;
             }
 
             .nav-link.active{
                 font-weight: 600;
-                background: transparent !important;
+                background-color: var(--surface-alpha) !important;
                 color: var(--primary-color) !important;
                 border: 0 !important;
                 border-bottom: 2px solid var(--primary-color) !important;
@@ -339,7 +347,7 @@
             </div>
             <div class="mt-4 px-2">
 
-                <ul class="nav nav-tabs nav-fill mt-4 px-2">
+                <ul class="nav nav-tabs nav-fill mt-4 px-2" id="tabs_div">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="career-tab" data-bs-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="true">Career</a>
                     </li>
@@ -822,9 +830,9 @@
                             <p class="mt-3 text-center">LeetCode is for people who enjoy solving problems that were already solved a thousand times. I’d rather build real projects and create something useful, instead of memorizing algorithms just to flex on the internet.</p>
                         </div>
 
-                        <div class="empty"></div>
-                        <div class="empty"></div>
-                        <div class="empty"></div>
+                        <div class="empty" style="height:100vh !important;"></div>
+                        <div class="empty" style="height:100vh !important;"></div>
+                        <div class="empty" style="height:100vh !important;"></div>
                     </div>
                     <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
                         <div id="hobby1_header" class="d-flex align-items-center justify-content-between">
