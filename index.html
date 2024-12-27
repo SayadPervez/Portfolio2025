@@ -193,6 +193,14 @@
                 color: white;
             }
 
+            .message-pill{
+                background-color: #ffffff33;
+                border:1px solid #00000033;
+                padding:5px 12px;
+                border-radius: 50px;
+                width: max-content;
+            }
+
             .article{
                 background: transparent;
                 border-radius: 8px;
@@ -207,6 +215,10 @@
 
             .article strong{
                 font-weight: 500;
+            }
+
+            .article_header{
+                font-weight: 400;
             }
 
             .article .badge{
@@ -226,6 +238,17 @@
 
             .no_indent{
                 text-indent: 0 !important;
+            }
+
+            .bsicons.link{
+                color: #1E90FF;
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            .bsicons.link:hover{
+                color: #1b80e4;
+                font-weight: 700;
             }
 
             .article > .article_description a{
@@ -831,6 +854,92 @@
                             <p class="mt-3 text-center">LeetCode is for people who enjoy solving problems that were already solved a thousand times. I’d rather build real projects and create something useful, instead of memorizing algorithms just to flex on the internet.</p>
                         </div>
 
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">♟️ Life's a game.</span>
+                                    </div>
+                                    <span class="article_timestamp">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Mole Hunter <i class="bsicons link" onclick="openInNewTab('https://molehunt.glitch.me/')">&#xF1C5;</i></h4>
+                                <p>
+                                    A simple Progressive Web Application based game that replicates the classic arcade game - Mole Hunter.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/mole-hunter.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🦠 Covid</span>
+                                    </div>
+                                    <span class="article_timestamp">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Corona Bed Availability API</h4>
+                                <p>
+                                    An API developed to find the availability of hospital beds in a district built on FASTAPI in Python.
+                                    <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/tncorona.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🦠 Covid</span>
+                                    </div>
+                                    <span class="article_timestamp">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Corona Population Mapper</h4>
+                                <p>
+                                    A website to monitor the number of covid cases in a given area in TamilNadu
+                                    <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/wp1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="empty" style="height:100vh !important;"></div>
                         <div class="empty" style="height:100vh !important;"></div>
                         <div class="empty" style="height:100vh !important;"></div>
@@ -1016,6 +1125,9 @@
                 // TODO: show projects based on filters
                 // also handle the case where both are false
                 console.log(show_electronic_projects,show_software_projects)
+            }
+            function openInNewTab(url) {
+                window.open(url, '_blank', 'noopener,noreferrer');
             }
         </script>
     </body>
